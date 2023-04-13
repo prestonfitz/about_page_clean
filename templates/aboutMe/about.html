@@ -1,0 +1,167 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="About Page">
+  <meta name="author" content="Preston Fitzgerald">
+  <!--Preston Fitzgerald-->
+  <!--Last Edited 4/13/2021-->
+
+  <title>Preston Fitzgerald | About Me</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'css/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="{% static 'css/vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/styles/clean-blog.min.css' %}" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/styles/mystyles.css' %}">
+  <link rel="shortcut icon" href="{% static 'img/coatofarms.jfif' %}"/>
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="{% url 'aboutMe:index' %}">Preston Fitzgerald</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'aboutMe:index' %}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'aboutMe:resume' %}">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'aboutMe:tableau' %}">Tableau</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'pokemon:index' %}">POK&eacute;MON</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'aboutMe:contact' %}">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{% static "img/rice.jpg" %}'); background-size: 100%; background-position: top center;" alt="Me in front of a Filippino rice paddy">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto" >
+          <div class="page-heading right">
+            <h1 class="fix">About Me</h1>
+            <span class="subheading">This is who I am</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+        <img src="{% static 'img/family.jpg' %}" alt="Family bundled up" class="imgleft" style="width: 250px">
+
+        <h2>The one, the only, Preston Fitzgerald</h2>
+       
+        <p>I, Preston, having been born of nerdy parents, am a total nerd and cannot help but entertain myself. I love my family. We are a bunch of nerds and we love it. My parents were the classic Mormon love story. They met at BYU, fell in love and got married. My older brother and I are following in their footsteps and are both at BYU. I also have a younger brother who is about to graduate and a younger sister who is finishing elementary school. My brothers and I tell her she is spoiled, but we know we have no one to blame but ourselves. </p>
+
+        <img src="{% static 'img/Epic Sax pic.png' %}" alt="Epic Sax Pic" style="height: 200px" class="imgright">
+
+        <p>I was born in Utah, but raised in Meridian, Idaho. I graduated from Mountain View High School in 2019. In highschool I participated in band, doing marching band for four years and participating in a state solo-ensemble festival my senior year with a saxophone quartet. I was also able to participate in National Honor Society my junior and senior years. I warned you, I'm a nerd!</p>
+
+        <iframe src="https://www.youtube.com/embed/NrOtcQ2VGt4" alt="Rhapsody by Debussy"></iframe>
+
+        <p>After I graduated high school, I served a mission for the Church of Jesus Christ of Latter-Day Saints. I served in the Philippines Quezon City North Mission speaking Tagalog. March 2020 I got pulled home due to COVID, so then I came here. I will return to the mission field May 2021. I hope to eventually return to the Philippines, but I have been temporarily reassigned to the West Virginia Charleston Mission.</p>
+
+        <img src="{% static 'img/dinos.jpg' %}" alt="Group of dinos, surrounded by Todd, the Mega-Dino" class="imgright" style="width: 250px">
+
+        <h3>Hobbies</h3>
+
+        <p>I continue to enjoy making music. I play piano and saxophone. I was able to participate in the Cougar Marching Band and BYU's ROC Band for Women's Basketball this year. I also enjoy cooking and making stuffed dinosaurs. Jurassic Park ain't got nothin' on me.</p>
+
+        <h3>Contact Information</h3>
+          <ul class="contact">
+            <li>Email: prestonfitz@gmail.com</li>
+            <li>Phone: (208)761-7282</li>
+            <li>Address: 8 Heritage Halls #3101 Provo, UT 84602</li>
+            <li>Alternatively, contact me <a class="link" href="{% url 'aboutMe:contact' %}">here</a></li> 
+          </ul>
+
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          <li class="list-inline-item">
+            <a href="https://twitter.com" target="_blank">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/people/Preston-Fitzgerald/100015572023909/" target="_blank">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="{% static 'img/ducks.mp4' %}">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+        </ul>
+        <p class="copyright text-muted">Copyright &copy; Preston Fitzgerald 2021</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'js/jquery.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{% static 'js/clean-blog.min.js' %}"></script>
+
+</body>
+
+</html>

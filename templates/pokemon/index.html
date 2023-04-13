@@ -1,0 +1,83 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Home</title>
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+<link rel="shortcut icon" href="{% static 'img/pokemon/poke.jpg' %}"/>
+<style>
+<!--
+body	{background-image: url({% static 'img/pokemon/poke.jpg' %});}
+legend	{float: left;
+		margin-left: auto;
+		margin-right: auto}
+-->
+</style>
+</head>
+
+<body>
+
+<br />
+<ul>
+	<li><a class="sheesha" href="{% url 'pokemon:index'%}">Home</a></li>
+	<li><a class="sheesh" href="{% url 'pokemon:starters'%}">Starters</a></li>
+	<li><a class="sheesh" href="{% url 'pokemon:types'%}">Types</a></li>
+	<li><a class="sheesh" href="{% url 'pokemon:pokeballs'%}">Pok&eacute; Balls</a></li>
+	<li style="float: right"><a class="sheesh" href="{% url 'pokemon:author'%}">Author</a></li> 
+	<li style="float: right"><a class="sheesh" href="{% url 'aboutMe:index' %}">Main Page</a></li>
+</ul>
+<form method="post" action="mailto:prestonfitz@gmail.com">
+
+<h1 style="text-align: center">Pok&eacute;mon</h1>
+<p class="box">Hello there! Welcome to the world of POK&eacute;MON! This website is designed to provide usful basic information for a beginning trainer in any region. It may even be helpful to some of the more experienced trainers as well. Please feel free to participate in the survey below.</p>
+<br />
+<br />
+<fieldset><legend>Who are you?</legend>
+	<p>First Name: <input name="firstname" type="text" size="25" /> &nbsp;
+	Last Name: <input name="lastname" type="text" size="25" /> &nbsp;
+	How long have you played Pok&eacute;mon?
+		<select name="years">
+			<option>Less than 1 year</option>
+			<option>1 year</option>
+			<option>2 years</option>
+			<option>3 years</option>
+			<option>4 years</option>
+			<option>5 years</option>
+			<option>More than 5 years</option>
+		</select>
+	</p>
+</fieldset>
+<fieldset><legend>Which games have you played?</legend>
+	<br /><input name="games" type="checkbox" value="Original Kanto" />Red, Blue, Yellow &nbsp;
+	<input name="games" type="checkbox" value="Original Johto" />Gold, Silver, Crystal &nbsp;
+	<input name="games" type="checkbox" value="Original Hoenn" />Ruby, Sapphire, Emerald &nbsp;
+	<input name="games" type="checkbox" value="Kanto" />Fire Red, Leaf Green &nbsp;
+	<input name="games" type="checkbox" value="Sinnoh" />Diamond, Pearl, Platinum &nbsp;
+	<br /><input name="games" type="checkbox" value="Johto" />Heart Gold, Soul Silver &nbsp;
+	<input name="games" type="checkbox" value="Unova" />Black (1 or 2), White (1 or 2) &nbsp;
+	<input name="games" type="checkbox" value="" />X or Y &nbsp;
+	<input name="games" type="checkbox" value="" />Alpha Sapphire, Omega Ruby
+</fieldset>
+<fieldset><legend>What is your favorite region?</legend>
+	<br /><input name="region" type="radio" value="kanto" />Kanto &nbsp;
+	<input name="region" type="radio" value="johto" />Johto &nbsp;
+	<input name="region" type="radio" value="johto" />Hoenn &nbsp;
+	<input name="region" type="radio" value="sinnoh" />Sinnoh
+	<input name="region" type="radio" value="unova" />Unova &nbsp;
+	<input name="region" type="radio" value="kalos" />Kalos
+</fieldset>
+<fieldset><legend>Any suggestions to improve this website?</legend>
+	<br /><br /><textarea name="suggest" rows="3" cols="100" style="text-align: center"></textarea>
+	
+	<p><input type="submit" value="Submit" />
+	<input type="reset" value="Reset" />
+	
+	<br /><br />Thank you and enjoy the wonderful world of POK&eacute;MON!</p>
+</fieldset>
+</form>
+
+</body>
+</html>

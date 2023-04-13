@@ -1,0 +1,236 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Pok&eacute; Balls</title>
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+<link rel="shortcut icon" href="{% static 'img/pokemon/poke.jpg' %}"/>
+<style>
+<!--
+img	{height: 150px;
+	width: 150px}
+	
+th	{width: 30%;
+	font-size: 30px;}
+tr.gen1	{background-color: yellow;
+		text-align: center;
+		font-size: 20px;}
+tr.gen2	{background-color: #00ccff;
+		text-align: center;
+		font-size: 20px;}
+tr.gen3	{background-color: lime;
+		text-align: center;
+		font-size: 20px;}
+tr.gen4	{background-color: #a3c2c2;
+		text-align: center;
+		font-size: 20px;}
+tr.gen5	{background-color: white;
+		text-align: center;
+		font-size: 20px;}
+-->
+</style>
+</head>
+
+<body>
+<br />
+<ul>
+	<li><a class="sheesh" href="{% url 'pokemon:index'%}">Home</a></li>
+	<li><a class="sheesh" href="{% url 'pokemon:starters'%}">Starters</a></li>
+	<li><a class="sheesh" href="{% url 'pokemon:types'%}">Types</a></li>
+	<li><a class="sheesha" href="{% url 'pokemon:pokeballs'%}">Pok&eacute; Balls</a></li>
+	<li style="float: right"><a class="sheesh" href="{% url 'pokemon:author'%}">Author</a></li> 
+	<li style="float: right"><a class="sheesh" href="{% url 'aboutMe:index' %}">Main Page</a></li>
+</ul>
+<table>
+	<tr>
+		<th style="font-size: 40px">Pok&eacute; Balls</th>
+	</tr>
+</table>
+<table>
+	<tr>
+		<td style="background-color: yellow; width: 15%"><a href="#gen1">Generation 1</a></td>
+		<td style="background-color: #00ccff; width: 15%"><a href="#gen2">Generation 2</a></td>
+		<td style="background-color: Lime; width: 15%"><a href="#gen3">Generation 3</a></td>
+		<td style="background-color: #a3c2c2; width: 15%"><a href="#gen4">Generation 4</a></td>
+		<td style="width: 15%; background-color: white"><a href="#gen5">Generation 5</a></td>
+	</tr>
+</table>
+<table>
+<caption style="caption-side: bottom; color: white; font-size: 20px">Descriptions courtesy of <a style="color: darkgrey" href="http://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9_Ball">bulbapedia.bulbagarden.net</a> and <a style="color: darkgrey" href="http://www.serebii.net/itemdex/list/pokeball.shtml">serebii.net</a>
+	<tr>
+		<th style="background-color: gray">Ball</th>
+		<th style="background-color: gray">Picture</th>
+		<th style="background-color: gray">Description</th>
+	</tr>
+	<tr>
+		<th colspan="4" style="background-color: #e6e600; color: black; font-size: 30px"><a id="gen1">Generation 1</a></th>
+	</tr>
+	<tr class="gen1">
+		<td>Pok&eacute; Ball</td>
+		<td><img src="{% static 'img/pokemon/balls/poke.jpg' %}" alt="Pok&eacute; Ball"></td>
+		<td>A device for catching wild Pok&eacute;mon It is thrown like a ball at a Pok&eacute;mon, comfortably encapsulating its target</td>
+	</tr>
+	<tr class="gen1">
+		<td>Great Ball</td>
+		<td><img src="{% static 'img/pokemon/balls/great.png' %}" alt="Great Ball"></td>
+		<td>A good, high-performance Poke Ball that provides a higher Pok&eacute;mon catch rate than a standard Poke Ball can</td>
+	</tr>
+	<tr class="gen1">
+		<td>Ultra Ball</td>
+		<td><img src="{% static 'img/pokemon/balls/ultra.png' %}" alt="Ultra Ball"></td>
+		<td>An ultra-high performance Poke Ball that provides a higher success rate for catching Pok&eacute;mon than a great ball</td>
+	</tr>
+	<tr class="gen1">
+		<td>Master Ball</td>
+		<td><img src="{% static 'img/pokemon/balls/mast.png' %}" alt="Master Ball"></td>
+		<td>The best Poke Ball with the ultimate level of performance. With it, you will catch any wild Pok&eacute;mon without fail</td>
+	</tr>
+	<tr class="gen1">
+		<td>Safari Ball</td>
+		<td><img src="{% static 'img/pokemon/balls/safa.png' %}" alt="Safari Ball"></td>
+		<td>A special Ball that is used only in the Safari Zone</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="background-color: #e6e600; text-align: center; font-size: 20px"><a href="#gen1">Generation 1</a></td>
+		<td colspan="2" style="background-color: #e6e600; text-align: center; font-size: 20px"><a href="#top">To top</a></td>
+	</tr>
+	<tr>
+		<th colspan="4" style="background-color: #00b8e6; color: black; font-size: 30px"><a id="gen2">Generation 2</a></th>
+	</tr>
+	<tr class="gen2">
+		<td>Level Ball</td>
+		<td><img src="{% static 'img/pokemon/balls/leve.png' %}" alt="Level Ball"></td>
+		<td>A Poke Ball that makes it easier to catch Pok&eacute;mon that are at a lower level than your own Pok&eacute;mon</td>
+	</tr>
+	<tr class="gen2">
+		<td>Lure Ball</td>
+		<td><img src="{% static 'img/pokemon/balls/lure.jpg' %}" alt="Lure Ball"></td>
+		<td>A Poke Ball that is good for catching Pok&eacute;mon that you reel in with a Rod while out fishing</td>
+	</tr>
+	<tr class="gen2">
+		<td>Moon Ball</td>
+		<td><img src="{% static 'img/pokemon/balls/moon.jpg' %}" alt="Moon Ball"></td>
+		<td>A Poke Ball that will make it easier to catch Pok&eacute;mon that can evolve using a Moon Stone</td>
+	</tr>
+	<tr class="gen2">
+		<td>Friend Ball</td>
+		<td><img src="{% static 'img/pokemon/balls/frie.png' %}" alt="Friend Ball"></td>
+		<td>A strange Poke Ball that will make the wild Pok&eacute;mon caught with it more friendly toward you immediately</td>
+	</tr>
+	<tr class="gen2">
+		<td>Love Ball</td>
+		<td><img src="{% static 'img/pokemon/balls/love.png' %}" alt="Love Ball"></td>
+		<td>A Poke Ball that works best when catching a Pok&eacute;mon that is of the opposite gender of your Pok&eacute;mon</td>
+	</tr>
+	<tr class="gen2">
+		<td>Heavy Ball</td>
+		<td><img src="{% static 'img/pokemon/balls/heavy.png' %}" alt="Heavy Ball"></td>
+		<td>A Poke Ball that is better than usual at catching very heavy Pok&eacute;mon</td>
+	</tr>
+	<tr class="gen2">
+		<td>Fast Ball</td>
+		<td><img src="{% static 'img/pokemon/balls/fast.jpg' %}" alt="Fast Ball"></td>
+		<td>A Poke Ball that makes it easier to catch Pok&eacute;mon that are usually very quick to run away</td>
+	</tr>
+	<tr class="gen2">
+		<td>Sport Ball</td>
+		<td><img src="{% static 'img/pokemon/balls/sport.png' %}" alt="Sport Ball"></td>
+		<td>A special Poke Ball that is used during the Bug-Catching Contest</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="background-color: #00b8e6; text-align: center; font-size: 20px"><a href="#gen2">Generation 2</a></td>
+		<td colspan="2" style="background-color: #00b8e6; text-align: center; font-size: 20px"><a href="#top">To top</a></td>
+	</tr>
+	<tr>
+		<th colspan="4" style="background-color: #00e600; color: black; font-size: 30px"><a id="gen3">Generation 3</a></th>
+	</tr>
+	<tr class="gen3">
+		<td>Premier Ball</td>
+		<td><img src="{% static 'img/pokemon/balls/prem.png' %}" alt="Premier Ball"></td>
+		<td>A somewhat rare Poke Ball that was made as a commemorative item used to celebrate an event of somesort</td>
+	</tr>
+	<tr class="gen3">
+		<td>Repeat Ball</td>
+		<td><img src="{% static 'img/pokemon/balls/repe.jpg' %}" alt="Repeat Ball"></td>
+		<td>A somewhat different Poke Ball that works especially well on a Pok&eacute;mon species that has been caught before.</td>
+	</tr>
+	<tr class="gen3">
+		<td>Timer Ball</td>
+		<td><img src="{% static 'img/pokemon/balls/timer.png' %}" alt="Timer Ball"></td>
+		<td>A somewhat different Poke Ball that becomes progressively more effective the more turns that are taken in battle.</td>
+	</tr>
+	<tr class="gen3">
+		<td>Nest Ball</td>
+		<td><img src="{% static 'img/pokemon/balls/nest.jpg' %}" alt="Nest Ball"></td>
+		<td>A somewhat different Poke Ball that becomes more effective the lower the level of the wild Pok&eacute;mon.</td>
+	</tr>
+	<tr class="gen3">
+		<td>Net Ball</td>
+		<td><img src="{% static 'img/pokemon/balls/net.jpg' %}" alt="Net Ball"></td>
+		<td>A somewhat different Poke Ball that is more effective when attempting to catch Water- or Bug-type Pok&eacute;mon.</td>
+	</tr>
+	<tr class="gen3">
+		<td>Dive Ball</td>
+		<td><img src="{% static 'img/pokemon/balls/dive.png' %}" alt="Dive Ball"></td>
+		<td>A somewhat different Poke Ball that works especially well when catching Pok&eacute;mon that live underwater.</td>
+	</tr>
+	<tr class="gen3">
+		<td>Luxury Ball</td>
+		<td><img src="{% static 'img/pokemon/balls/luxu.gif' %}" alt="Luxury Ball"></td>
+		<td>A particularly comfortable Poke Ball that makes a wild Pok&eacute;mon quickly grow friendlier after being caught.</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="background-color: #00e600; text-align: center; font-size: 20px"><a href="#gen3">Generation 3</a></td>
+		<td colspan="2" style="background-color: #00e600; text-align: center; font-size: 20px"><a href="#top">To top</a></td>
+	</tr>
+	<tr>
+		<th colspan="4" style="background-color: #94b8b8; color: black; font-size: 30px"><a id="gen4">Generation 4</a></th>
+	</tr>
+	<tr class="gen4">
+		<td>Heal Ball</td>
+		<td><img src="{% static 'img/pokemon/balls/heal.jpg' %}" alt="Heal Ball"></td>
+		<td>A remedial Poke Ball that restores the HP of a Pok&eacute;mon caught with it and eliminates any status conditions.</td>
+	</tr>
+	<tr class="gen4">
+		<td>Quick Ball</td>
+		<td><img src="{% static 'img/pokemon/balls/quick.png' %}" alt="Quick Ball"></td>
+		<td>A somewhat different Poke Ball that has a more successful catch rate if used at the start of a wild encounter.</td>
+	</tr>
+	<tr class="gen4">
+		<td>Dusk Ball</td>
+		<td><img src="{% static 'img/pokemon/balls/dusk.png' %}" alt="Dusk Ball"></td>
+		<td>A somewhat different Poke Ball that makes it easier to catch wild Pok&eacute;mon at night or in dark places like caves.</td>
+	</tr>
+	<tr class="gen4">
+		<td>Cherish Ball</td>
+		<td><img src="{% static 'img/pokemon/balls/cher.png' %}" alt="Cherish Ball"></td>
+		<td>A quite rare Pok&eacute; Ball that has been crafted in order to commemorate a special occasion of some sort.</td>
+	</tr>
+	<tr class="gen4">
+		<td>Park Ball</td>
+		<td><img src="{% static 'img/pokemon/balls/park.png' %}" alt="Park Ball"></td>
+		<td>A special Pok&eacute; Ball for the Pal Park.</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="background-color: #94b8b8; text-align: center; font-size: 20px"><a href="#gen4">Generation 4</a></td>
+		<td colspan="2" style="background-color: #94b8b8; text-align: center; font-size: 20px"><a href="#top">To top</a></td>
+	</tr>	
+	<tr>
+		<th colspan="4" style="background-color: gray; color: black; font-size: 30px"><a id="gen5">Generation 5</a></th>
+	</tr>
+
+	<tr class="gen5">
+		<td>Dream Ball</td>
+		<td><img src="{% static 'img/pokemon/balls/dream.png' %}" alt="Dream Ball"></td>
+		<td>A special Pok&eacute; Ball that appears in your Bag out of nowhere in the Entr&eacute;e Forest. It can catch any Pok&eacute;mon.</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="background-color: gray; text-align: center; font-size: 20px"><a href="#gen5">Generation 5</a></td>
+		<td colspan="2" style="background-color: gray; text-align: center; font-size: 20px"><a href="#top">To top</a></td>
+	</tr>
+</table>
+</body>
+</html>

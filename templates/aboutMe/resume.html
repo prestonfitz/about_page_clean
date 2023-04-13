@@ -1,0 +1,284 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Resume Page">
+  <meta name="author" content="Preston Fitzgerald">
+  <!--Preston Fitzgerald-->
+  <!--Last Edited 4/13/2021-->
+
+  <title>Preston Fitzgerald | Resume</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'css/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="{% static 'css/vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/styles/clean-blog.min.css' %}" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/styles/mystyles.css' %}">
+  <link rel="shortcut icon" href="{% static 'img/coatofarms.jfif' %}"/>
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="{% url 'aboutMe:index' %}">Preston Fitzgerald</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'aboutMe:index' %}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'aboutMe:about' %}">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'aboutMe:tableau' %}">Tableau</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'pokemon:index' %}">POK&eacute;MON</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'aboutMe:contact' %}">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{% static "img/ymount.jpg" %}')" alt="Y-Mount coming through the clouds">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Why should I care?</h1>
+            <h2 class="subheading">A list of skills and accomplishments; in short, a resume</h2>
+            <span class="meta">But really though, that is an excellent question</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--In Page Nav-->
+  <div class="innav">
+    <ul class="ul">
+        <li class="inlink li">
+            <a class="linkb" href="#work">Work Experience</a>
+        </li>
+        <li class="inlink li">
+            <a class="linkb" href="#edu">Education</a>
+        </li>
+        <li class="inlink li">
+            <a class="linkb" href="#ser">Service and Extra-Curricular Activities</a>
+        </li>
+    </ul>
+  </div>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ol type="I">
+            <a id="work"></a>
+            <li class="head">Work Experience</li>
+              <ol>
+                <li class="sub">Soccer Referee for Meridian PAL</li>
+                  <ul>
+                    <li class="item">Show up 30 minutes early to every game</li> 
+                    <li class="item">Ensure safety and fair play</li>
+                    <li class="item">Make difficult decisions</li>
+                    <li class="item">Act with authority around coaches and spectators much older than me</li>
+                    <li class="item">Fall 2013-Spring 2015</li>
+                  </ul>
+                <li class="sub">Missionary for The Church of Jesus Christ of Latter-Day Saints</li>
+                  <ul>
+                    <li class="item">Preached the gospel in the Philippines
+                    <li class="item">Learned the local language, Tagalog (Filipino)</li>
+                    <li class="item">Interacted with individuals of all age groups and walks of life</li>
+                    <li class="item">Many opportunities to teach and serve</li>
+                    <li class="item">July 2019-March 2020</li>
+                  </ul>
+                <li class="sub">Boise State Audio-Visual Team</li>
+                  <ul>
+                    <li class="item">COVID upgrades to classrooms at Boise State University</li>
+                    <li class="item">Installed microphones, cameras, and necessary equipment for online teaching</li>
+                    <li class="item">Learned to work with cables and other electronic equipment</li> 
+                    <li class="item">Summer 2020</li>
+                  </ul>
+              </ol>
+            <a id="edu"></a>
+            <li class="head">Education</li>
+              <ol>
+                <li class="sub">Graduated from Mountain View High School, West Ada School District</li>
+                  <ul>
+                    <li class="item">Maintained 4.0 unweighted cumulative GPA</li>
+                    <li class="item">Ten Concurrent Credit/Advances Placement classes</li>
+                      <ul><li class="item itemsub">HS Math III, Honors History, College Speech, Pre-Calculus, Biology, German (two years), AP US History, AP English, and AP statistics</li></ul>
+                    <li class="item">Member of NHS</li>
+                    <li class="item">Four years in German as a foreign language</li>
+                    <li class="item">Boise State Capitol Scholar</li>
+                  </ul>
+                <li class="sub">College experience at Brigham Young University</li>
+                  <ul>
+                    <li class="item">Completed 2 semesters</li>
+                    <li class="item">Currently planning on majoring in accounting</li>
+                  </ul>
+                <li class="sub">Foreign Languages</li>
+                  <ol type="i">
+                    <li class="item olsub">Tagalog</li>
+                      <ul>
+                        <li class="item itemsub">Learned in Philippines</li>
+                        <li class="item itemsub">6 weeks classroom, 7 months working with native speakers</li>
+                        <li class="item itemsub">Intermediate skills</li>
+                      </ul>
+                    <li class="item olsub">German</li>
+                      <ul>
+                        <li class="item itemsub">Learned in high school and college</li>
+                        <li class="item itemsub">5 total years, completed through German 202</li>
+                        <li class="item itemsub">Intermediate skills</li>
+                      </ul>
+                  </ol>
+              </ol>
+              <div class="fig">
+                <figure>
+                  <video controls="controls" alt="Preston Speaking Tagalog" class="lang">
+
+                    <source src="{% static 'img/L2.mp4' %}" type="video/mp4" />
+                    If you are reading this, your browser doesn't support the HTML5 video attribute.
+                    
+                  </video>
+                  <figcaption class="cap">Tagalog</figcaption>
+                </figure>
+                
+                <figure>
+              
+                  <video controls="controls" alt="Preston Speaking German" class="lang">
+
+                    <source src="{% static 'img/german.MOV' %}" type="video/mp4" />
+                    If you are reading this, your browser doesn't support the HTML5 video attribute.
+                    
+                  </video>
+                  <figcaption class="cap">German</figcaption>
+                </figure>
+              </div>
+            <a id="ser"></a>
+            <li class="head">Service and Extra-Curricular Activities</li>
+              <ol>
+                <li class="sub">Boy Scouts of America</li>
+                  <ul>
+                    <li class="item"><b>Leadership positions:</b> Served in leadership positions such as senior patrol leader and varsity team captain in boy scouts, earning various awards</li>
+                    <li class="item"><b>Accomplishments:</b></li>
+                      <ul>
+                        <li class="item itemsub">Eagle-Scout Service Project</li>
+                          <ul>
+                            <li class="item subsub">Sewed over 100 stuffed animal dinosaurs for Meridian PD</li>
+                            <li class="item subsub">To be used to comfort children in distressing situations</li>
+                          </ul>
+                        <li class="item itemsub">Continued past Eagle Scout Award earning additional palm recognitions.     
+                        <li class="item itemsub">Earned the Varsity Scouts’ highest award, the Denali
+                      </ul>
+                  </ul>
+                <li class="sub">Mountain View High School Bands</li>
+                  <ul>
+                    <li class="item"><b>Marching Band:</b> Lettered four years in a row and was section leader for two years</li>
+                    <li class="item"><b>Varsity Jazz Band:</b> Participated two years</li>
+                    <li class="item"><b>Pep Band:</b> Was able to participate in good standing for four years in a row</li>
+                    <li class="item"><b>Symphonic Band:</b> was a section leader for 2 years</li>
+                  </ul>
+                <li class="sub">Mountain View High School Writing Center</li>
+                  <ul>
+                    <li class="item">During lunch throughout the school year</li>
+                    <li class="item">I assisted students on an individual basis with proofreading and editing</li>
+                    <li class="item">2017-2018 and 2018-2019 school years</li>
+                  </ul>
+                <li class="sub">BYU Bands</li>
+                  <ul>
+                    <li class="item"><b>Marching Band:</b> Participated in the 2020 season</li>
+                    <li class="item"><b>ROC Band:</b> Pep band for 2021 women's basketball team</li>
+                    <li class="item"><b>University Band:</b> Participated in the 2021 season</li>
+                  </ul>
+                <li class="sub">Church</li>
+                  <ul>
+                    <li class="item"><b>Leadership:</b>  Served as a class president in church youth and young adult groups at various times since I was 13</li>
+                    <li class="item"><b>Planning:</b> I assisted in the planning of a summer camp for 60+ young men</li>
+                    <li class="item"><b>Public Speaking:</b> Had the opportunity of speaking to large groups often consisting of adults</li>
+                    <li class="item"><b>Performance:</b> Performed musical numbers in large and small ensembles in front of my congregation</li>
+                  </ul>
+              </ol>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          <li class="list-inline-item">
+            <a href="https://twitter.com" target="_blank">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/people/Preston-Fitzgerald/100015572023909/" target="_blank">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="{% static 'img/ducks.mp4' %}">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+        </ul>
+        <p class="copyright text-muted">Copyright &copy; Preston Fitzgerald 2021</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'js/jquery.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{% static 'js/clean-blog.min.js' %}"></script>
+
+</body>
+
+</html>
