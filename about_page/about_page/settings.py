@@ -31,7 +31,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-CSRF_TRUSTED_ORIGINS = ['https://prestonfitzgerald.com']
+CSRF_TRUSTED_ORIGINS = ['https://aboutpageclean-production.up.railway.app']
 
 
 # Application definition
