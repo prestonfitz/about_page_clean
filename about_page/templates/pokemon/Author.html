@@ -1,0 +1,76 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8" />
+<title>About the Author</title>
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+<link rel="shortcut icon" href="{% static 'img/pokemon/poke.jpg' %}"/>
+<style>
+<!--
+body	{background-color: #669999;}
+
+a.sheesha{color: white;
+		background-color: #990033;}
+img	{border: 3px solid #990033;}
+body	{text-align: left}
+h3	{color: #b3ccff}
+div.movie	{text-align: center;}
+-->
+</style>
+</head>
+
+<body>
+</br>
+<ul>
+	<li><a class="sheesh" href="{% url 'pokemon:index'%}">Home</a></li>
+	<li><a class="sheesh" href="{% url 'pokemon:starters'%}">Starters</a></li>
+	<li><a class="sheesh" href="{% url 'pokemon:types'%}">Types</a></li>
+	<li><a class="sheesh" href="{% url 'pokemon:pokeballs'%}">Pok&eacute; Balls</a></li>
+	<li style="float: right"><a class="sheesha" href="{% url 'pokemon:author'%}">Author</a></li> 
+	<li style="float: right"><a class="sheesh" href="{% url 'aboutMe:index' %}">Main Page</a></li>
+</ul>
+
+<h1>About me: Preston Fitzgerald</h1>
+
+<img src="{% static 'img/pokemon/preston.jpg' %}" style="float: right" width="399px" height="300px" alt="Preston Fitzgerald">
+
+<p>Hello! My name is Preston Fitzgerald. I am a freshman at Mountain View High School and I made this web site as a final project for my web design class. We are learning to program in HTML. It is my favorite class.</p>
+
+<h3>My Family</h3>
+
+<p>At home, I have and older brother named William, a younger brother named Brian, and a 5 year old sister named Sarah. I also have my parents. They do not understand Pok&eacute;mon, but my siblings and I all love it.</p>
+
+<h3>What I do with my time</h3>
+
+<img src="{% static 'img/pokemon/Dinomarch.jpg' %}" alt="Big line of stuffed dinosaurs" style="float: left" width="100px" height="191px">
+
+<p>Besides Pok&eacute;mon and HTML, I also play several instruments. I play piano, and I play Alto Saxophone in both band and marching band, and I will play it in Jazz Band as well in my Sophmore year. I am also teaching myself the trumpet. I play several other video games other than Pok&eacute;mon. Some of by favorites include Minecraft, Starcraft (the original), and Bloons TD 5.</p>
+
+<h3>Some of my Accomplishments</h3>
+
+<p>I have done some pretty cool things in life. In 5<sup>th</sup> grade, I participated in National History Day, a competition where you do a project on an event in history. I wrote a paper on the Protestant Reformation. I won 2<sup>nd</sup> place in Regionals and 1<sup>st</sup> in state. My next major accomplishment was earning the rank of Eagle Scout, the highest rank in Boy Scouts. To earn that, one must lead in a fairly large service project. With the help of volunteers, I sewed and donated over 100 stuffed dinosaurs. The final accomplishment that I would like to talk about comes from my middle school. I had two awards here. One was for doing more service than I needed for National Junior Honors Society. The other was called "Mr. Cherokee" and was for having a 4.0 GPA throughout middle school and being an outstanding student. I try to be humble, but I am proud of what I have accomplished.</p>
+
+<img src="{% static 'img/pokemon/yellow.jpg' %}" style="float: right" height="100px" width="100px">
+
+<h2 style="color: #e6e600">Pok&eacute;mon Experience</h2>
+
+<p>I have been playing Pok&eacute;mon for about 8 years. I grew up on the original games of Red, Blue, and Yellow. I have also played Leaf Green and then Emerald and Fire Red Omega on an Emulator. Sinnoh and onward is still fairly unknown to me. My favorite region is Kanto, but it is the one I know the best. My favorite game is Yellow version. I love being able to get all of the starters and how Pikachu follows you. Click <a href="http://www.happychild.org.uk/supercoolzone/pokemon/evolution/">here</a> for a good walk through of the original games.</p>
+
+<h3 style="text-align: center; color: yellow">Pok&eacutemon Yellow's Intro</h3>
+
+<div class="movie">
+
+<video width="240px" height="240" controls="controls" style="text-align: center">
+
+<source src="{% static 'img/pokemon/Pokemon Yellow Intro.mp4' %}" type="video/mp4" />
+If you are reading this, your browser doesn't support the HTML5 video attribute.
+
+</video>
+
+</div>
+
+</body>
+</html>

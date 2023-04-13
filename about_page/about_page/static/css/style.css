@@ -1,0 +1,47 @@
+body	{background-color: black;
+		margin-top: 0px;}
+
+a:link	{text-decoration: none;
+		color: white;}
+a:visited	{text-decoration: none;
+			color: white;}
+		
+h1	{color: white;
+	font-size: 50px}
+p	{color: white}
+body	{text-align: center;}
+p.box	{width: 600px; margin-left: auto; margin-right: auto;	 margin-top: 50px; border-radius: 5px;
+		background-color: white; padding: 10px; background-color: grey; color: white; }
+fieldset	{margin-left: 50px;
+		margin-right: 50px;
+		background-color: grey;
+		color: white}
+legend	{color: white}	
+
+li	{float: left;
+	border: 1px solid #666699}
+
+li a	{display: block;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+	border-color: black}
+
+ul	{margin: 0;
+	padding: 0;
+	background-color: #333;
+	overflow:hidden;
+	list-style-type: none}
+
+th	{color: white;}
+table	{margin-left: auto;
+		margin-right: auto;
+		width: 90%;}
+a:link	{color: blue;}
+a:visited	{color: blue;}
+a.sheesha{color: white;
+		background-color: red;}
+a.sheesh	{color: white;}
+
+
+

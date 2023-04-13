@@ -1,0 +1,158 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Types</title>
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+<link rel="shortcut icon" href="{% static 'img/pokemon/poke.jpg' %}"/>
+<style>
+<!--
+td	{width: 280px;
+	height: 80px;
+	color: white;
+	font-size: 27px}
+th	{width: 22.5%;
+	font-size: 30px}
+-->
+</style>
+</head>
+
+<body>
+<br />
+<ul>
+	<li><a class="sheesh" href="{% url 'pokemon:index'%}">Home</a></li>
+	<li><a class="sheesh" href="{% url 'pokemon:starters'%}">Starters</a></li>
+	<li><a class="sheesha" href="{% url 'pokemon:types'%}">Types</a></li>
+	<li><a class="sheesh" href="{% url 'pokemon:pokeballs'%}">Pok&eacute; Balls</a></li>
+	<li style="float: right"><a class="sheesh" href="{% url 'pokemon:author'%}">Author</a></li> 
+	<li style="float: right"><a class="sheesh" href="{% url 'aboutMe:index' %}">Main Page</a></li>
+</ul>
+<table>
+	<tr>
+		<th style="background-color: black; font-size: 40px">Pok&eacute;mon Types</th>
+	</tr>
+</table>
+<table>
+	<tr>
+		<th style="background-color: gray">Type</th>
+		<th style="background-color: gray">Strong Against</th>
+		<th style="background-color: gray">Weak Against</th>
+		<th style="background-color: gray">Other Notes</th>
+	</tr>
+<table>
+<table>
+<caption style="caption-side: bottom; color: white; font-size: 20px">Click <a style="color: red" href="http://www.pokemonxy.com/_ui/img/_en/art/Type-Matchup_chart_EN.pdf">here</a> for all this information in a quick reference table</caption> 
+	<tr style="background-color: darkgray">
+		<td>Normal</td>
+		<td>None</td>
+		<td>Fighting</td>
+		<td>Doesn't affect Ghost type; Isn't affected by Ghost Type</td>
+	</tr>
+	<tr style="background-color: red">
+		<td>Fire</td>
+		<td>Grass, Ice, Bug, Steel</td>
+		<td>Water, Ground, Rock</td>
+		<td>Cannot be frozen or burned</td>
+	</tr>
+	<tr style="background-color: blue">
+		<td>Water</td>
+		<td>Fire, Ground, Rock</td>
+		<td>Grass, Electric</td>
+		<td>None</td>
+	</tr>
+	<tr style="background-color: green">
+		<td>Grass</td>
+		<td>Water, Ground, Rock</td>
+		<td>Fire, Ice, Poison, Flying, Bug</td>
+		<td>Immune to Leech Seed and powder and spore moves</td>
+	</tr>
+	<tr style="background-color: yellow; color: black">
+		<td style="color: black">Electric</td>
+		<td style="color: black">Water, Flying</td>
+		<td style="color: black">Ground</td>
+		<td style="color: black">Cannot be paralyzed; doesn't affect Ground type</td>
+	</tr>
+	<tr style="background-color: aqua">
+		<td style="color: black">Ice</td>
+		<td style="color: black">Grass, Ground, Flying, Dragon</td>
+		<td style="color: black">Fire, Fighting, Rock, Steel</td>
+		<td style="color: black">Cannot be frozen; takes no damage from hail</td>
+	</tr>
+	<tr style="background-color: #996633">
+		<td>Fighting</td>
+		<td>Normal, Ice, Rock, Dark, Steel</td>
+		<td>Flying, Psychic, Fairy</td>
+		<td>Doesn't affect Ghost type</td>
+	</tr>
+	<tr style="background-color: purple">
+		<td>Poison</td>
+		<td>Grass, Fairy</td>
+		<td>Ground, Psychic</td>
+		<td>Cannot be poisoned; Doesn't affect Steel type</td>
+	</tr>
+	<tr style="background-color: brown">
+		<td>Ground</td>
+		<td>Fire, Electric, Poison, Rock, Steel</td>
+		<td>Water, Grass, Ice</td>
+		<td>Takes no damage in a sandstorm; Doesn't affect Flying type; Isn't affected by Electric Type</td>
+	</tr>
+	<tr style="background-color: lightgray">
+		<td style="color: black">Flying</td>
+		<td style="color: black">Grass, Fighting, Bug</td>
+		<td style="color: black">Electric, Ice, Rock</td>
+		<td style="color: black">Not affected by spikes; Isn't affected by Ground Type</td>
+	</tr>
+	<tr style="background-color: purple">
+		<td>Psychic</td>
+		<td>Fighting, Poison</td>
+		<td>Bug, Ghost, Dark</td>
+		<td>Doesn't affect Dark type</td>
+	</tr>
+	<tr style="background-color: lightgreen">
+		<td style="color: black">Bug</td>
+		<td style="color: black">Grass, Psychic, Dark</td>
+		<td style="color: black">Fire, Flying, Rock</td>
+		<td style="color: black">None</td>
+	</tr>
+	<tr style="background-color: brown">
+		<td>Rock</td>
+		<td>Fire, Ice, Flying, Bug</td>
+		<td>Water, Grass, Fighting, Ground, Steel</td>
+		<td>Takes no damage in a sandstorm</td>
+	</tr>
+	<tr style="background-color: gray">
+		<td>Ghost</td>
+		<td>Psychic, Ghost</td>
+		<td>Ghost, Dark</td>
+		<td>Doesn't affect Normal type; Isn't affected by Normal or Fighting Types</td>
+	</tr>
+	<tr style="background-color: #996600">
+		<td>Dragon</td>
+		<td>Dragon</td>
+		<td>Ice, Dragon, Fairy</td>
+		<td>Doesn't affect Fairy type</td>
+	</tr>
+	<tr style="background-color: black">
+		<td>Dark</td>
+		<td>Psychic, Ghost</td>
+		<td>Fighting, Bug, Fairy</td>
+		<td>Isn't affected by Psychic</td>
+	</tr>
+	<tr style="background-color: #333333">
+		<td>Steel</td>
+		<td>Ice, Rock, Fairy</td>
+		<td>Fire, Fighting, Ground</td>
+		<td>Takes no damage in a sandstorm; Isn't affected by Poison Type</td>
+	</tr>
+	<tr style="background-color: pink">
+		<td style="color: black">Fairy</td>
+		<td style="color: black">Fighting, Dragon, Dark</td>
+		<td style="color: black">Poison, Steel</td>
+		<td style="color: black">Isn't affected by Dragon Type</td>
+	</tr>
+</table>
+</body>
+</html>

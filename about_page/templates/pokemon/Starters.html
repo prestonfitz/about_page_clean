@@ -1,0 +1,437 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Pok&eacute;mon Starters</title>
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+<link rel="shortcut icon" href="{% static 'img/pokemon/poke.jpg' %}"/>
+<style>
+<!--
+
+tr.grass	{text-align: center;
+			font-size: 20px;
+			color: white;
+			background-color: green;}
+tr.water	{text-align: center;
+			font-size: 20px;
+			color: white;
+			background-color: blue;}
+tr.fire		{text-align: center;
+			font-size: 20px;
+			color: white;
+			background-color: red;}
+td	{width: 22.5%;}
+img	{height: 150px;
+	width: 150px}
+
+-->
+</style>
+</head>
+
+<body>
+<br />
+<ul>
+	<li><a class="sheesh" href="{% url 'pokemon:index'%}">Home</a></li>
+	<li><a class="sheesha" href="{% url 'pokemon:starters'%}">Starters</a></li>
+	<li><a class="sheesh" href="{% url 'pokemon:types'%}">Types</a></li>
+	<li><a class="sheesh" href="{% url 'pokemon:pokeballs'%}">Pok&eacute; Balls</a></li>
+	<li style="float: right"><a class="sheesh" href="{% url 'pokemon:author'%}">Author</a></li> 
+	<li style="float: right"><a class="sheesh" href="{% url 'aboutMe:index' %}">Main Page</a></li>
+</ul>
+<table>
+	<tr>
+		<th style="font-size: 40px; background-color: black"></a>Pok&eacute;mon Starters and Their Evolutions</th>
+	</tr>
+</table>
+
+<table style="text-align: center">
+	<tr>
+		<td style="background-color: yellow; width: 15%"><a href="#kanto">Kanto</a></td>
+		<td style="background-color: #00ccff; width: 15%"><a href="#johto">Johto</a></td>
+		<td style="background-color: Lime; width: 15%"><a href="#hoenn">Hoenn</a></td>
+		<td style="background-color: #a3c2c2; width: 15%"><a href="#sinnoh">Sinnoh</a></td>
+		<td style="width: 15%; background-color: white"><a href="#unova">Unova</a></td>
+		<td style="background-color: red; width: 15%"><a href="#kalos">Kalos</a></td>
+	</tr>
+</table>
+
+<table>	
+	<tr>
+		<th style="background-color: gray">Level Received</th>
+		<th style="background-color: gray">Name</th>
+		<th style="background-color: gray">Type</th>
+		<th style="background-color: gray">Picture</th>
+	</tr>
+	<tr>
+		<th colspan="4" style="background-color: yellow; color: black; font-size: 30px"><a id="kanto"></a>Kanto</th>
+	</tr>
+	<tr class="grass">
+		<td>lv 5</td>
+		<td>Bulbasaur</td>
+		<td>Grass, Poison</td>
+		<td><img src="{% static 'img/pokemon/starters/bulba.jpg' %}" alt="Bulbasaur"></td>
+	</tr>
+	<tr class="grass">
+		<td>lv 16</td>
+		<td>Ivysaur</td>
+		<td>Grass, Poison</td>
+		<td><img src="{% static 'img/pokemon/starters/ivy.jpg' %}" alt="Ivysaur"></td>
+	</tr>	
+	<tr class="grass">
+		<td>lv 32</td>
+		<td>Venusaur</td>
+		<td>Grass, Poison</td>
+		<td><img src="{% static 'img/pokemon/starters/venu.jpg' %}" alt="Venusaur"></td>
+	</tr>
+	<tr class="fire">
+		<td>lv 5</td>
+		<td>Charmander</td>
+		<td>Fire</td>
+		<td><img src="{% static 'img/pokemon/starters/charmander.jpg' %}" alt="Charmander"></td>
+	</tr>
+	<tr class="fire">
+		<td>lv 16</td>
+		<td>Charmeleon</td>
+		<td>Fire</td>
+		<td><img src="{% static 'img/pokemon/starters/charm.jpg' %}" alt="Charmeleon"></td>
+	</tr>	
+	<tr class="fire">
+		<td>lv 36</td>
+		<td>Charizard</td>
+		<td>Fire, Flying</td>
+		<td><img src="{% static 'img/pokemon/starters/chari.jpg' %}" alt="Charizard"></td>
+	</tr>	
+	<tr class="water">
+		<td>lv 5</td>
+		<td>Squirtle</td>
+		<td>Water</td>
+		<td><img src="{% static 'img/pokemon/starters/squirt.jpg' %}" alt="Squirtle"></td>
+	</tr>	
+	<tr class="water">
+		<td>lv 16</td>
+		<td>Wartortle</td>
+		<td>Water</td>
+		<td><img src="{% static 'img/pokemon/starters/war.jpg' %}" alt="Wartortle"></td>
+	</tr>	
+	<tr class="water">
+		<td>lv 36</td>
+		<td>Blastoise</td>
+		<td>Water</td>
+		<td><img src="{% static 'img/pokemon/starters/blast.jpg' %}" alt="Blastoise"></td>
+	</tr>
+	<tr>
+		<td colspan="2" style="background-color: yellow; text-align: center; font-size: 20px"><a href="#kanto">Kanto</a></td>
+		<td colspan="2" style="background-color: yellow; text-align: center; font-size: 20px"><a href="#top">To top</a></td>
+	</tr>
+	<tr>
+		<th colspan="4" style="background-color: #00ccff; color: white; font-size: 30px"><a id="johto"></a>Johto</th>
+	</tr>
+	<tr class="grass">
+		<td>lv 5</td>
+		<td>Chikorita</td>
+		<td>Grass</td>
+		<td><img src="{% static 'img/pokemon/starters/chik.jpg' %}" alt="Chikorita"></td>
+	</tr>
+	<tr class="grass">
+		<td>lv 16</td>
+		<td>Bayleef</td>
+		<td>Grass</td>
+		<td><img src="{% static 'img/pokemon/starters/bay.jpg' %}" alt="Bayleef"></td>
+	</tr>	
+	<tr class="grass">
+		<td>lv 32</td>
+		<td>Meganium</td>
+		<td>Grass</td>
+		<td><img src="{% static 'img/pokemon/starters/mega.jpg' %}" alt="Meganium"></td>
+	</tr>
+	<tr class="fire">
+		<td>lv 5</td>
+		<td>Cyndaquil</td>
+		<td>Fire</td>
+		<td><img src="{% static 'img/pokemon/starters/cyn.jpg' %}" alt="Cyndaquil"></td>
+	</tr>
+	<tr class="fire">
+		<td>lv 14</td>
+		<td>Quilava</td>
+		<td>Fire</td>
+		<td><img src="{% static 'img/pokemon/starters/qui.jpg' %}" alt="Quilava"></td>
+	</tr>	
+	<tr class="fire">
+		<td>lv 36</td>
+		<td>Typhlosion</td>
+		<td>Fire</td>
+		<td><img src="{% static 'img/pokemon/starters/typh.jpg' %}" alt="Typhlosion"></td>
+	</tr>	
+	<tr class="water">
+		<td>lv 5</td>
+		<td>Totodile</td>
+		<td>Water</td>
+		<td><img src="{% static 'img/pokemon/starters/toto.jpg' %}" alt="Totodile"></td>
+	</tr>	
+	<tr class="water">
+		<td>lv 18</td>
+		<td>Croconaw</td>
+		<td>Water</td>
+		<td><img src="{% static 'img/pokemon/starters/croc.jpg' %}" alt="Croconaw"></td>
+	</tr>	
+	<tr class="water">
+		<td>lv 30</td>
+		<td>Feraligatr</td>
+		<td>Water</td>
+		<td><img src="{% static 'img/pokemon/starters/fera.jpg' %}" alt="Feraligatr"></td>
+	</tr>
+		<tr>
+		<td colspan="2" style="background-color: #00ccff; text-align: center; font-size: 20px"><a href="#johto">Johto</a></td>
+		<td colspan="2" style="background-color: #00ccff; text-align: center; font-size: 20px"><a href="#top">To top</a></td>
+	</tr>
+	<tr>
+		<th colspan="4" style="background-color: lime; color: white; font-size: 30px"><a id="hoenn"></a>Hoenn</th>
+	</tr>
+	<tr class="grass">
+		<td>lv 5</td>
+		<td>Treecko</td>
+		<td>Grass</td>
+		<td><img src="{% static 'img/pokemon/starters/tree.jpg' %}" alt="Treecko"></td>
+	</tr>
+	<tr class="grass">
+		<td>lv 16</td>
+		<td>Grovyle</td>
+		<td>Grass</td>
+		<td><img src="{% static 'img/pokemon/starters/grov.jpg' %}" alt="Grovyle"></td>
+	</tr>	
+	<tr class="grass">
+		<td>lv 36</td>
+		<td>Sceptile</td>
+		<td>Grass</td>
+		<td><img src="{% static 'img/pokemon/starters/scep.jpg' %}" alt="Sceptile"></td>
+	</tr>
+	<tr class="fire">
+		<td>lv 5</td>
+		<td>Torchic</td>
+		<td>Fire</td>
+		<td><img src="{% static 'img/pokemon/starters/torc.jpg' %}" alt="Torchic"></td>
+	</tr>
+	<tr class="fire">
+		<td>lv 16</td>
+		<td>Combusken</td>
+		<td>Fire, Fighting</td>
+		<td><img src="{% static 'img/pokemon/starters/comb.jpg' %}" alt="Combusken"></td>
+	</tr>	
+	<tr class="fire">
+		<td>lv 36</td>
+		<td>Blaziken</td>
+		<td>Fire, Fighting</td>
+		<td><img src="{% static 'img/pokemon/starters/blaz.jpg' %}" alt="Blaziken"></td>
+	</tr>	
+	<tr class="water">
+		<td>lv 5</td>
+		<td>Mudkip</td>
+		<td>Water</td>
+		<td><img src="{% static 'img/pokemon/starters/mud.jpg' %}" alt="Mudkip"></td>
+	</tr>	
+	<tr class="water">
+		<td>lv 16</td>
+		<td>Marshtomp</td>
+		<td>Water, Ground</td>
+		<td><img src="{% static 'img/pokemon/starters/marsh.jpg' %}" alt="Marshtomp"></td>
+	</tr>	
+	<tr class="water">
+		<td>lv 36</td>
+		<td>Swampert</td>
+		<td>Water, Ground</td>
+		<td><img src="{% static 'img/pokemon/starters/swamp.jpg' %}" alt="Swampert"></td>
+	</tr>
+		<tr>
+		<td colspan="2" style="background-color: lime; text-align: center; font-size: 20px"><a href="#hoenn">Hoenn</a></td>
+		<td colspan="2" style="background-color: lime; text-align: center; font-size: 20px"><a href="#top">To top</a></td>
+	</tr>
+	<tr>
+		<th colspan="4" style="background-color: #a3c2c2; color: white; font-size: 30px"><a id="sinnoh"></a>Sinnoh</th>
+	</tr>
+	<tr class="grass">
+		<td>lv 5</td>
+		<td>Turtwig</td>
+		<td>Grass</td>
+		<td><img src="{% static 'img/pokemon/starters/turt.jpg' %}" alt="Turtwig"></td>
+	</tr>
+	<tr class="grass">
+		<td>lv 18</td>
+		<td>Grotle</td>
+		<td>Grass</td>
+		<td><img src="{% static 'img/pokemon/starters/grot.jpg' %}" alt="Grotle"></td>
+	</tr>	
+	<tr class="grass">
+		<td>lv 32</td>
+		<td>Torterra</td>
+		<td>Grass, Ground</td>
+		<td><img src="{% static 'img/pokemon/starters/tort.jpg' %}" alt="Torterra"></td>
+	</tr>
+	<tr class="fire">
+		<td>lv 5</td>
+		<td>Chimchar</td>
+		<td>Fire</td>
+		<td><img src="{% static 'img/pokemon/starters/chim.jpg' %}" alt="Chimchar"></td>
+	</tr>
+	<tr class="fire">
+		<td>lv 14</td>
+		<td>Monferno</td>
+		<td>Fire, Fighting</td>
+		<td><img src="{% static 'img/pokemon/starters/monf.jpg' %}" alt="Monferno"></td>
+	</tr>	
+	<tr class="fire">
+		<td>lv 36</td>
+		<td>Infernape</td>
+		<td>Fire, Fighting</td>
+		<td><img src="{% static 'img/pokemon/starters/infe.jpg' %}" alt="Infernape"></td>
+	</tr>	
+	<tr class="water">
+		<td>lv 5</td>
+		<td>Piplup</td>
+		<td>Water</td>
+		<td><img src="{% static 'img/pokemon/starters/pipl.jpg' %}" alt="Piplup"></td>
+	</tr>	
+	<tr class="water">
+		<td>lv 16</td>
+		<td>Prinplup</td>
+		<td>Water</td>
+		<td><img src="{% static 'img/pokemon/starters/prin.jpg' %}" alt="Prinplup"></td>
+	</tr>	
+	<tr class="water">
+		<td>lv 36</td>
+		<td>Empoleon</td>
+		<td>Water, Steel</td>
+		<td><img src="{% static 'img/pokemon/starters/empo.jpg' %}" alt="Empoleon"></td>
+	</tr>
+		<tr>
+		<td colspan="2" style="background-color: #a3c2c2; text-align: center; font-size: 20px"><a href="#sinnoh">Sinnoh</a></td>
+		<td colspan="2" style="background-color: #a3c2c2; text-align: center; font-size: 20px"><a href="#top">To top</a></td>
+	</tr>
+	<tr>
+		<th colspan="4" style="background-color: white; color: black; font-size: 30px"><a id="unova"></a>Unova</th>
+	</tr>
+	<tr class="grass">
+		<td>lv 5</td>
+		<td>Snivy</td>
+		<td>Grass</td>
+		<td><img src="{% static 'img/pokemon/starters/sniv.jpg' %}" alt="Snivy"></td>
+	</tr>
+	<tr class="grass">
+		<td>lv 17</td>
+		<td>Servine</td>
+		<td>Grass</td>
+		<td><img src="{% static 'img/pokemon/starters/serv.jpg' %}" alt="Servine"></td>
+	</tr>	
+	<tr class="grass">
+		<td>lv 36</td>
+		<td>Serperior</td>
+		<td>Grass</td>
+		<td><img src="{% static 'img/pokemon/starters/serp.jpg' %}" alt="Serperior"></td>
+	</tr>
+	<tr class="fire">
+		<td>lv 5</td>
+		<td>Tepig</td>
+		<td>Fire</td>
+		<td><img src="{% static 'img/pokemon/starters/tepi.jpg' %}" alt="Tepig"></td>
+	</tr>
+	<tr class="fire">
+		<td>lv 17</td>
+		<td>Pignite</td>
+		<td>Fire, Fighting</td>
+		<td><img src="{% static 'img/pokemon/starters/pign.jpg' %}" alt="Pignite"></td>
+	</tr>	
+	<tr class="fire">
+		<td>lv 36</td>
+		<td>Emboar</td>
+		<td>Fire, Fighting</td>
+		<td><img src="{% static 'img/pokemon/starters/embo.jpg' %}" alt="Emboar"></td>
+	</tr>	
+	<tr class="water">
+		<td>lv 5</td>
+		<td>Oshawott</td>
+		<td>Water</td>
+		<td><img src="{% static 'img/pokemon/starters/osha.jpg' %}" alt="Oshawott"></td>
+	</tr>	
+	<tr class="water">
+		<td>lv 17</td>
+		<td>Dewott</td>
+		<td>Water</td>
+		<td><img src="{% static 'img/pokemon/starters/dewo.jpg' %}" alt="Dewott"></td>
+	</tr>	
+	<tr class="water">
+		<td>lv 36</td>
+		<td>Samurott</td>
+		<td>Water</td>
+		<td><img src="{% static 'img/pokemon/starters/samu.jpg' %}" alt="Samurott"></td>
+	</tr>
+		<tr>
+		<td colspan="2" style="background-color: white; text-align: center; font-size: 20px"><a href="#unova">Unova</a></td>
+		<td colspan="2" style="background-color: white; text-align: center; font-size: 20px"><a href="#top">To top</a></td>
+	</tr>
+	<tr>
+		<th colspan="4" style="background-color: red; color: white; font-size: 30px"><a id="kalos"></a>Kalos</th>
+	</tr>
+	<tr class="grass">
+		<td>lv 5</td>
+		<td>Chespin</td>
+		<td>Grass</td>
+		<td><img src="{% static 'img/pokemon/starters/chesp.jpg' %}" alt="Chespin"></td>
+	</tr>
+	<tr class="grass">
+		<td>lv 16</td>
+		<td>Quilladin</td>
+		<td>Grass</td>
+		<td><img src="{% static 'img/pokemon/starters/quill.jpg' %}" alt="Quilladin"></td>
+	</tr>	
+	<tr class="grass">
+		<td>lv 36</td>
+		<td>Chesnaught</td>
+		<td>Grass, Fighting</td>
+		<td><img src="{% static 'img/pokemon/starters/chesn.jpg' %}" alt="Chesnaught"></td>
+	</tr>
+	<tr class="fire">
+		<td>lv 5</td>
+		<td>Fennekin</td>
+		<td>Fire</td>
+		<td><img src="{% static 'img/pokemon/starters/fen.jpg' %}" alt="Fennekin"></td>
+	</tr>
+	<tr class="fire">
+		<td>lv 16</td>
+		<td>Braixen</td>
+		<td>Fire</td>
+		<td><img src="{% static 'img/pokemon/starters/brai.jpg' %}" alt="Braixen"></td>
+	</tr>	
+	<tr class="fire">
+		<td>lv 36</td>
+		<td>Delphox</td>
+		<td>Fire, Psychic</td>
+		<td><img src="{% static 'img/pokemon/starters/delp.jpg' %}" alt="Delphox"></td>
+	</tr>	
+	<tr class="water">
+		<td>lv 5</td>
+		<td>Froakie</td>
+		<td>Water</td>
+		<td><img src="{% static 'img/pokemon/starters/froa.jpg' %}" alt="Froakie"></td>
+	</tr>	
+	<tr class="water">
+		<td>lv 16</td>
+		<td>Frogadier</td>
+		<td>Water</td>
+		<td><img src="{% static 'img/pokemon/starters/frog.jpg' %}" alt="Frogadier"></td>
+	</tr>	
+	<tr class="water">
+		<td>lv 36</td>
+		<td>Greninja</td>
+		<td>Water, Dark</td>
+		<td><img src="{% static 'img/pokemon/starters/gren.jpg' %}" alt="Greninga"></td>
+	</tr>
+		<tr>
+		<td colspan="2" style="background-color: red; text-align: center; font-size: 20px"><a href="#kalos">Kalos</a></td>
+		<td colspan="2" style="background-color: red; text-align: center; font-size: 20px"><a href="#top">To top</a></td>
+	</tr>
+	
+</table>
+</body>
+</html>

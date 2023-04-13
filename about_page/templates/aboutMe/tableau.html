@@ -1,0 +1,134 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston Fitzgerald | Live Tableau Demo</title>
+    <meta name="description" content="Live Tableau. Forgive the lag">
+    <meta name="author" content="Preston Fitzgerald">
+  <!--Preston Fitzgerald-->
+  <!--Last Edited 4/13/2021-->
+    <style>
+        .backgda    {background-image: url("{% static 'img/Stadium.jpg' %}"); alt:"Cougar Stadium";
+            background-size: 100%;}
+        .navExtra   {background-image: url("{% static 'img/Stadium.jpg' %}"); alt:"Cougar Stadium";
+            background-size: 110%;}
+    </style>
+    <!--linked styles-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles/mystyles.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles/tableaustyles.css' %}">
+    <link rel="shortcut icon" href="{% static 'img/coatofarms.jfif' %}"/>
+</head>
+<body>
+    <!--Header-->
+    <div class="nav navExtra">
+        <ul>
+            <li style="float: left">
+                <a class="link" href="{% url 'aboutMe:index' %}">Preston Fitzgerald</a>
+            </li>
+            <li>
+                <a class="link" href="{% url 'aboutMe:contact' %}">Contact</a>
+            </li>
+            <li>
+                <a class="link" href="{% url 'pokemon:index' %}">POK&eacute;MON</a>
+            </li>
+            <li>
+                <a class="link" href="#">Tableau</a>
+            </li>
+            <li>
+                <a class="link" href="{% url 'aboutMe:resume' %}">Resume</a>
+            </li>
+           <li>
+                <a class="link" href="{% url 'aboutMe:about' %}">About</a>
+            </li>
+            <li>
+                <a class="link" href="{% url 'aboutMe:index' %}">Home</a>
+            </li>
+        </ul>
+    </div>
+    
+    <header class="backgda">
+        <div class="head">
+            <h1 class="title">Data at is finest</h1>
+            <h2 class="suba">An exhibition of Global Superstore data</h2>
+            <h3 class="subb">Created using <a href="https://public.tableau.com/s/" target="_blank">Live Tableau</a></h3>
+        </div>
+    </header>
+
+    <!--in page navigation-->
+    <div class="innav">
+        <ul>
+            <li class="inlink">
+                <a class="link" href="#forecast">Forecast</a>
+            </li>
+            <li class="inlink">
+                <a class="link" href="#cat">Categories</a>
+            </li>
+            <li class="inlink">
+                <a class="link" href="#sub">All around profit</a>
+            </li>
+            <li class="inlink">
+                <a class="link" href="#states">Profit by state</a>
+            </li>
+        </ul>
+    </div>
+
+    <!--Tableau. I broke the first one up. Won't do that again. Not worth it-->
+    <a id="states"></a>
+    <div class="top left">
+        <div class='tableauPlaceholder' id='viz1618005027847' style='position: relative'>
+            <noscript>
+                <a href='#'><img alt='Profit by state ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;We&#47;WebDevProjectProfitbystate&#47;Profitbystate&#47;1_rss.png' style='border: none' /></a>
+            </noscript>
+            <object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' /> 
+            <param name='site_root' value='' />
+            <param name='name' value='WebDevProjectProfitbystate&#47;Profitbystate' /><param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;We&#47;WebDevProjectProfitbystate&#47;Profitbystate&#47;1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en' />
+            </object>
+        </div>
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1618005027847');                    
+            var vizElement = divElement.getElementsByTagName('object')[0];                    
+            vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+            var scriptElement = document.createElement('script');                    
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+        </script>
+        <table style="width: 100%"><caption class="caption">Total profit by state in the United States</caption></table>
+    </div>
+
+    <div class="top right">
+        <a id="sub"></a>
+        <div class='tableauPlaceholder' id='viz1618006833454' style='position: relative'><noscript><a href='#'><img alt='Profit ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;We&#47;WebDevProject_16180037918060&#47;Profit&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='WebDevProject_16180037918060&#47;Profit' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;We&#47;WebDevProject_16180037918060&#47;Profit&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1618006833454');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        <table style="width: 100%"><caption class="caption">The highest performing state was California. They profited in almost every instance. </caption></table>
+    </div>
+
+    <div class="bottom left">
+        <a id="cat"></a>
+        <div class='tableauPlaceholder' id='viz1618007298436' style='position: relative'><noscript><a href='#'><img alt='Category ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;We&#47;WebDevProjectCategory_16180040283850&#47;Category&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='WebDevProjectCategory_16180040283850&#47;Category' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;We&#47;WebDevProjectCategory_16180040283850&#47;Category&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1618007298436');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        <table style="width: 100%"><caption class="caption">Here is an overview. Despite some low profits or losses in some sub-categories, California nonetheless profited in every category. </caption></table>
+    </div>
+
+    <div class="bottom right">
+        <a id="forecast"></a>
+        <div class='tableauPlaceholder' id='viz1618007312647' style='position: relative'><noscript><a href='#'><img alt='Forecast ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;We&#47;WebDevProjectForecast_16180041054000&#47;Forecast&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='WebDevProjectForecast_16180041054000&#47;Forecast' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;We&#47;WebDevProjectForecast_16180041054000&#47;Forecast&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1618007312647');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        <table style="width: 100%"><caption class="caption">Of course, the past is in the past. However, the future of sales in California looks bright, with continued profits forcasted for the next year. </caption></table>
+    </div>
+
+    <!--footer-->
+    <div class="foot">
+            <p class="copyright text-muted">Copyright &copy; Preston Fitzgerald 2021</p>
+    </div>
+</body>
+</html>

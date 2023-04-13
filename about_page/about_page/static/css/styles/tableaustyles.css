@@ -1,0 +1,102 @@
+/*general*/
+a:link	{text-decoration: none;
+    color: lightblue;}
+a:visited	{text-decoration: none;
+        color: pink;}
+a:hover {text-decoration: underline;
+        color: violet}
+
+
+/*Stuff for heading*/
+header  {height: 500px}
+
+.head   {position:absolute;
+        left: 35%;
+        top: 100px}
+
+.title  {color: white;
+        font-family:'Oswald';
+        font-weight:600;
+        font-size: xxx-large;
+        margin-bottom: 0px}
+.suba   {color: white;
+        font-family: 'Oswald';
+        font-weight: 400;
+        margin-top:0px;
+        margin-bottom:0px}
+.subb   {color: white;
+        margin-top:0px;
+        font-family: 'Oswald';
+        font-weight:200;
+        font-style: italic;}
+
+/*positions*/
+.top    {position:absolute;
+        top:650px;
+        height:400px}
+
+.bottom {position:absolute;
+        top:1200px;
+        height:400px}
+
+.right  {right:8px;
+        width:49%}
+
+.left   {left: 8px;
+        width:49%}
+
+.foot   {position: absolute;
+        top: 1650px;
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom:100px;
+        left:5px;
+        right:5px;}
+
+/*Stuff for Body */
+.backgdb    {background-color: #868e963d;
+    position: absolute;}
+
+.caption {font-family: Oswald;
+        color: #5a5f64;
+        text-align: center !important;
+        font-style: italic;
+        font-size: large}
+
+/*Nav bar*/
+.nav    {
+        padding:5px;
+        font-family: 'Oswald';
+        top: 0;
+        left: 0;
+        right: 0;
+}
+
+.link   {color: white !important}
+
+li	{float: right;
+    border: none;
+    padding: 2px}
+
+li a	{display: block;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;}
+
+ul	{margin: 0;
+    padding: 0;
+    overflow:hidden;
+    list-style-type: none}
+
+/*In page nav*/
+.innav  {background-color: #5a5f64;
+        padding:5px;
+        font-family: 'Oswald';
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        position:sticky}
+
+.inlink {width: 25%;
+        padding: 0;}
